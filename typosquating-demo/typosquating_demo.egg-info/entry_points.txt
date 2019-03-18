@@ -1,0 +1,3 @@
+[console_scripts]
+typosquating = __main__:main
+

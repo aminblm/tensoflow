@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: typosquating-demo
+Version: 1.1.5
+Summary: A typosquating demo.
+Home-page: https://github.com/amboulouma
+Author: Real Python
+Author-email: amine@boulouma.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

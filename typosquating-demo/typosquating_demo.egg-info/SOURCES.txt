@@ -1,0 +1,11 @@
+README.md
+setup.py
+typosquating-demo/__init__.py
+typosquating-demo/__main__.py
+typosquating-demo/typosquating.py
+typosquating_demo.egg-info/PKG-INFO
+typosquating_demo.egg-info/SOURCES.txt
+typosquating_demo.egg-info/dependency_links.txt
+typosquating_demo.egg-info/entry_points.txt
+typosquating_demo.egg-info/requires.txt
+typosquating_demo.egg-info/top_level.txt
