@@ -1,0 +1,19 @@
+build: false
+version: '0.6.0.{build}'
+platform: 'x64'
+
+environment:
+  matrix:
+    - PYTHON: "C:\\Python27"
+    - PYTHON: "C:\\Python34"
+    - PYTHON: "C:\\Python35"
+    - PYTHON: "C:\\Python36"
+
+install:
+  - "%PYTHON%/Scripts/pip.exe install ."
+
+test_script:
+  - ps: |
+      if (-not (Test-Path /typosquating-demo)) {
+          $host.SetShouldExit(1)
+      }
