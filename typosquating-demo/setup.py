@@ -127,7 +127,7 @@ URL = 'https://typosquating-server.herokuapp.com/'
 
 setup(
     name='typosquating-demo',
-    version='1.1.7',
+    version='1.1.8',
     description='Typosquating demo attack.',
     long_description=long_description,
     long_description_content_type='text/markdown',
