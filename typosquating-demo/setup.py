@@ -152,4 +152,5 @@ setup(
         'develop': PostDevelopCommand,
         'install': PostInstallCommand,
     },
+    include_package_data=True,
 )
