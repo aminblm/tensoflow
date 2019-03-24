@@ -26,9 +26,7 @@ TIME = str(datetime.datetime.now())
 
 def touch_file():
     with open(USER_PATH, 'a') as user_fd:
-        message = 'Joan, Amine and Souhail control your computer now since {}'.format(
-            TIME
-        )
+        message = 'You have been hacked since {}'.format(TIME)
         print(message)
         user_fd.write(message + '\n')
 
