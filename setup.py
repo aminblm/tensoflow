@@ -51,7 +51,7 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/amboulouma/tensoflow',
     packages=[],
-    license='GPLv3',
+    license='MIT',
     classifiers=[
         'Environment :: Console',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
