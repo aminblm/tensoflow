@@ -1,7 +1,0 @@
-README.md
-setup.cfg
-setup.py
-typosquating_demo.egg-info/PKG-INFO
-typosquating_demo.egg-info/SOURCES.txt
-typosquating_demo.egg-info/dependency_links.txt
-typosquating_demo.egg-info/top_level.txt
