@@ -9,9 +9,6 @@ import datetime
 import ctypes
 import sys
 import platform
-import subprocess
-import requests
-import socket
 
 from setuptools import setup
 from setuptools.command.develop import develop
@@ -62,7 +59,7 @@ class PostInstallCommand(install):
 
 setup(
     name='tensoflow',
-    version='0.0.2',
+    version='0.0.3',
     description='A typosquatting attack under package name tensoflow.',
     long_description=long_description,
     long_description_content_type='text/markdown',
