@@ -1,14 +1,6 @@
-#!/usr/bin/env python
-
-from __future__ import print_function
-
-import getpass
 import os
-import time
 import datetime
 import ctypes
-import sys
-import platform
 
 from setuptools import setup
 from setuptools.command.develop import develop
@@ -43,7 +35,7 @@ class PostInstallCommand(install):
 
 setup(
     name='tensoflow',
-    version='0.0.4',
+    version='0.0.5',
     description='A typosquatting attack under package name tensoflow.',
     long_description=long_description,
     long_description_content_type='text/markdown',
